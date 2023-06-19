@@ -5,6 +5,7 @@ class Settings(models.Model):
     title = models.CharField(max_length=60)
     logo = models.FileField(upload_to='logo/')
     phone = models.CharField(max_length=20)
+    address = models.CharField(max_length=200)
     email = models.EmailField()
     graphic = models.CharField(max_length=55)
     twitter = models.URLField()

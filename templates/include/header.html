@@ -46,90 +46,9 @@
                         <li class="menu-item"><a href="{% url 'team_index' %}">Команда</a>
                         </li>
                         <li class="menu-item"><a href="{% url 'building_index' %}">Здания</a></li>
-                        <li class="menu-item menu-item-has-children"><a href="#">Portfolio</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="page-portfolio-grid.html">Grid</a></li>
-                                <li class="menu-item"><a href="page-portfolio-grid-fullwidth.html">Grid Full-Width</a></li>
-                                <li class="menu-item"><a href="page-portfolio-slider.html">Slider</a></li>
-                                <li class="menu-item"><a href="page-portfolio-slider-fullwidth.html">Slider Full-Width</a></li>
-                                <li class="menu-item"><a href="page-project-detail.html">Project Detail 1</a></li>
-                                <li class="menu-item"><a href="page-project-detail-2.html">Project Detail 2</a></li>
-                                <li class="menu-item"><a href="page-project-detail-3.html">Project Detail 3</a></li>
-                                <li class="menu-item"><a href="page-project-detail-4.html">Project Detail 4</a></li>                               
-                            </ul>
-                        </li>
-                        <li class="menu-item"><a href="blog.html">Blog</a></li>
-                        <li class="menu-item"><a href="page-contact.html">Contact</a></li>
+                        <li class="menu-item"><a href="{% url 'response' %}">Контакты</a></li>
                     </ul>
                 </nav><!-- /#main-nav -->
-
-                <div id="header-search">
-                    <a class="header-search-icon" href="#"><span class="fa fa-search"></span></a>
-
-                    <form role="search" method="get" class="header-search-form" action="#">
-                        <input type="text" value="" name="s" class="header-search-field" placeholder="Type and hit enter...">
-                        <button type="submit" class="header-search-submit" title="Search">Search</button>
-                        <input type="hidden" name="post_type" value="post">
-                    </form>
-                </div><!-- /#header-search -->
-
-                <div class="nav-top-cart-wrapper">
-                    <a class="nav-cart-trigger" href="#">
-                        <span class="fa fa-shopping-cart cart-icon">
-                            <span class="shopping-cart-items-count">3</span>
-                        </span>
-                    </a>
-
-                    <div class="nav-shop-cart">
-                        <div class="widget_shopping_cart_content">
-                            <ul class="cart_list product_list_widget ">
-                                <li class="mini_cart_item">
-                                    <a href="#" class="remove" title="Remove this item">×</a>
-                                    <a href="#">
-                                        <img width="160" height="160" src="{% static 'assets/img/shop-item.png' %}" alt="image">
-                                        Shop Item 01
-                                    </a>
-                                                
-                                    <span class="quantity">1 × <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">$</span>200.00</span>
-                                    </span>
-                                </li>
-                                <li class="mini_cart_item">
-                                    <a href="#" class="remove" title="Remove this item">×</a>
-                                    <a href="#">
-                                        <img width="160" height="160" src="{% static 'assets/img/shop-item.png' %}" alt="image">
-                                        Shop Item 02
-                                    </a>
-                                                
-                                    <span class="quantity">1 × <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">$</span>70.00</span>
-                                    </span>
-                                </li>
-                                <li class="mini_cart_item">
-                                    <a href="#" class="remove" title="Remove this item">×</a>
-                                    <a href="#">
-                                        <img width="160" height="160" src="{% static 'assets/img/shop-item.png' %}" alt="image">
-                                        Shop Item 03
-                                    </a>
-                                                
-                                    <span class="quantity">1 × <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">$</span>30.00</span>
-                                    </span>
-                                </li>
-                            </ul><!-- /.product_list_widget -->
-
-                            <p class="total">
-                                <strong>Subtotal:</strong>
-                                <span class="woocommerce-Price-amount amount">
-                                    <span class="woocommerce-Price-currencySymbol">$</span>300.00
-                                </span>
-                            </p>
-        
-                            <p class="buttons">
-                                <a href="#" class="wprt-button small">View Cart</a>
-                                <a href="#" class="wprt-button small checkout">Checkout</a>
-                            </p>
-                        </div>
                     </div>
                 </div><!-- /.nav-top-cart-wrapper -->
             </div>

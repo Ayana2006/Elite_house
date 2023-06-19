@@ -26,9 +26,11 @@ class Media(models.Model):
         verbose_name = 'Фотография'
         verbose_name_plural = 'Фотографии'
         
-class Otclick(models.Model):
-    full_name = models.CharField(max_length=50)
-    text = models.TextField(max_length=3000)
+class Otklic(models.Model):
+    full_name = models.CharField(max_length=55)
+    phone = models.CharField(max_length=22)
+    subject = models.CharField(max_length=222)
+    text = models.TextField(max_length=3333)
     email = models.EmailField()
     
     def __str__(self):
